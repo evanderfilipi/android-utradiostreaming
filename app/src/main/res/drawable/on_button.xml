@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:left="15dp" android:top="10dp">
+                <bitmap android:src="@drawable/on_press"/>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <!-- SHADOW LAYER -->
+            <item android:left="15dp" android:top="10dp">
+                <shape>
+                    <solid android:color="#b1000000" />
+                    <corners android:radius="15dip"/>
+                </shape>
+            </item>
+            <!-- CONTENT LAYER -->
+            <item android:bottom="-5dp" android:right="-5dp">
+                <bitmap android:src="@drawable/on_press"/>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>
